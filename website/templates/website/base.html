@@ -1,10 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link type="text/css" href="{% static 'website/css/style.css' %}" rel="stylesheet"/>
     <title>{{ title }}</title>
 </head>
 <body>
-<h1>{{ title }}</h1>
+    <header class="header">
+        <a href="#" class="logo">FEFUSPORTS</a>
+        <a href="#" class="profile">PROFILE</a>
+    </header>
+    {% block content %} {% endblock %}
 </body>
 </html>
