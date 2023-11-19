@@ -1,4 +1,13 @@
 {% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
 <div class="left-bar">
+    <div class="find-questionnaires">поиск анкеты</div>
+    <form class="tags-search" autocomplete="off" action="" method="get">
+        <input id="search-input" name="s" placeholder="Поиск..." type="search">
+    </form>
+    <div class="tag-box">
 
+    </div>
 </div>
+{% endblock %}
