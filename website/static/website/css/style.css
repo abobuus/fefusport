@@ -42,8 +42,9 @@ header .logo {
 }
 
 header .profile {
-    font-size: 13px;
-    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    padding: 8px;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
     color: #e9e9e9;
     transition: .5s;
@@ -53,8 +54,9 @@ header a span {
     color: #bf9f5a;
 }
 
-header .profile:hover {
+.profile:hover {
     color: #bf9f5a;
+    background-color: #404040;
 }
 
 .left-bar {
@@ -64,7 +66,6 @@ header .profile:hover {
     position: fixed;
     top: 0;
     left: 0;
-    color:
 }
 
 .find-questionnaires {
@@ -100,5 +101,150 @@ header .profile:hover {
     border-radius: 8px;
     outline: none;
     background: #eeeeee;
-    color: #9E9C9C;
+    color: #9e9e9e;
+}
+
+.tag-box {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 90%;
+    margin: 10px auto 7px;
+    display: block;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.tag {
+    color: #e9e9e9;
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.add-page {
+    padding-top: 5%;
+    padding-left: 380px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 3px;
+    color: #eeeeee;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.form-add-page {
+    padding-top: 33px;
+    padding-left: 20%;
+}
+
+.form-add-page p {
+    margin: 20px;
+}
+
+.form-add-page p label {
+    color: #eeeeee;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 2px;
+    display: inline-block;
+    min-width: 130px;
+    vertical-align: top;
+}
+
+.form-add-page p input {
+    padding-left: 5px;
+    padding: 4px;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    background: #eeeeee;
+    color: #222;
+    width: 27rem;
+    font-weight: 600;
+    border: 1px solid #404040;
+}
+
+.form-add-page p textarea {
+    width: 27rem;
+    font-family: Montserrat, sans-serif;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding: 4px;
+    background: #eeeeee;
+    color: #222;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #404040;
+}
+
+.form-add-page button {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #404040;
+    font-family: Montserrat, sans-serif;
+    border-radius: 8px;
+    background: #eeeeee;
+    color: #000;
+}
+
+.content {
+    padding-left: 27%;
+    padding-top: 8%;
+    padding-right: 8%;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.questionnaire {
+    padding-bottom: 25%;
+}
+
+.person-name {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #eee;
+    margin-bottom: 20px;
+    background-color: #505050;
+    padding: 6px;
+}
+
+.person-photo {
+    max-width: 300px;
+	height: auto;
+	float: left;
+	border-radius: 8px;
+}
+
+.questionnaire .person-content {
+    font-family: Montserrat, sans-serif;
+    font-weight: 200;
+    font-size: 26px;
+    letter-spacing: 3px;
+    color: #eee;
+}
+
+.questionnaire .person-contacts-vk {
+    padding-left: 45px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #bf9f5a;
+}
+
+.questionnaire .person-contacts-tg {
+    padding-left: 45px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #bf9f5a;
 }
