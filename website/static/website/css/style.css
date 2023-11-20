@@ -202,7 +202,7 @@ header a span {
 }
 
 .questionnaire {
-    padding-bottom: 25%;
+    padding-bottom: 20%;
 }
 
 .person-name {
@@ -217,7 +217,7 @@ header a span {
 }
 
 .person-photo {
-    max-width: 300px;
+    max-width: 200px;
 	height: auto;
 	float: left;
 	border-radius: 8px;
