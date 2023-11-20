@@ -8,8 +8,8 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">fefu<span>sports</span></a>
-        <a href="#" class="profile">profile</a>
+        <a href="{% url 'home' %}" class="logo">fefu<span>sports</span></a>
+        <a href="{% url 'add_page' %}" class="profile">добавить анкету</a>
     </header>
     {% block content %} {% endblock %}
 </body>

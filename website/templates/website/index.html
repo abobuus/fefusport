@@ -1,5 +1,4 @@
 {% extends 'website/base.html' %}
-{% load static %}
 {% block content %}
 <div class="left-bar">
     <div class="find-questionnaires">поиск анкеты</div>
@@ -7,7 +6,25 @@
         <input id="search-input" name="s" placeholder="Поиск..." type="search">
     </form>
     <div class="tag-box">
-
+    {% for tag in tags %}
+        <div>
+            <a href="#" class="tag">{{ tag.name }}</a>
+        </div>
+    {% endfor %}
     </div>
+</div>
+<div class="content">
+    <ul class="questionnaires">
+    {% for q in questionnaires %}
+        <li class="questionnaire">
+            <p class="person-name">{{ q.name }}
+                <a href="{{ q.contacts_vk }}" class="person-contacts-vk">VK</a>
+                <a href="{{ q.contacts_tg }}" class="person-contacts-tg">Telegram</a>
+            </p>
+            <p><img class="person-photo" src="{{ q.photo.url }}"></p>
+            <p class="person-content">{{ q.content }}</p>
+        </li>
+    {% endfor %}
+    </ul>
 </div>
 {% endblock %}
