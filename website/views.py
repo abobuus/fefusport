@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from website.forms import AddPostForm
 from website.models import *
@@ -18,3 +18,4 @@ def addpage(request):
     else:
         form = AddPostForm()
     return render(request, 'website/addpage.html', {'form': form, 'title': 'Добавление анкеты'})
+
