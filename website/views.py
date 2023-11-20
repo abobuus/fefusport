@@ -5,9 +5,8 @@ from website.models import *
 
 
 def index(request):
-    tags = Tag.objects.all()
     questionnaires = Person.objects.all()
-    return render(request, 'website/index.html', {'tags': tags, 'questionnaires': questionnaires})
+    return render(request, 'website/index.html', {'title': 'Главная страница', 'questionnaires': questionnaires})
 
 
 def addpage(request):
